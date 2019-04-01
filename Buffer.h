@@ -16,6 +16,7 @@ class Buffer {
 		// Setters
 		void fill(int);
 		void insert(int);
+		void clean();
 		
 	private:
         int init;
