@@ -11,10 +11,7 @@ This is a arduino library that helps to buffer values.
 
 ## Getting Started
 
-- ``` length``` Buffer size
-- ``` init ``` Initial value
-
-### Constructors
+### Create buffer instance
 ```
 Buffer b = Buffer(length, init);
 
@@ -26,6 +23,11 @@ or
 
 Buffer* b = new Buffer(length, init);
 ```
+
+### Constructor
+```Buffer(length, init)``` Create a new instance and clear the buffer.
+``` length```: Buffer size, ``` init ```: Initial value
+
 
 ### Getters
 - ```calcAverage()``` Calc the buffer average and return the result
