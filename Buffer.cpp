@@ -5,7 +5,7 @@ Buffer::Buffer(int length, int init){
 	this->values = new int[length];
 	this->length = length;
 	this->init = init;
-	this->clean();
+	this->clear();
 }
 
 
@@ -58,7 +58,7 @@ void Buffer::insert(int value){
 	this->calcAverage();
 }
 
-void Buffer::clean(){
-	// Clean the Buffer and enable to fill on first insert
+void Buffer::clear(){
+	// Clear the Buffer and enable to fill on first insert
 	this->fill(this->init);
 }

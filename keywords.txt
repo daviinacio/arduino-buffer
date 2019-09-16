@@ -19,7 +19,7 @@ empty	KEYWORD2
 size	KEYWORD2
 fill	KEYWORD2
 insert	KEYWORD2
-clean	KEYWORD2
+clear	KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)
