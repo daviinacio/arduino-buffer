@@ -12,36 +12,36 @@ This is a arduino library that helps to buffer values.
 ## Getting Started
 
 ### Create buffer instance
-```
+```C++
 Buffer b = Buffer(length, init);
-
+```
 or
-
+```C++
 Buffer b(length, init);
-
+```
 or
-
+```C++
 Buffer* b = new Buffer(length, init);
 ```
 
 ### Constructor
-```Buffer(length, init)``` Create a new instance and clear the buffer.
-``` length```: Buffer size, ``` init ```: Initial value
+`Buffer(length, init)` Create a new instance and clear the buffer.
+`length`: Buffer size, `init`: Initial value
 
 
 ### Getters
-- ```calcAverage()``` Calc the buffer average and return the result
-- ```getAverage()``` Just return the buffer average
-- ```getAt(index)``` Returns the buffer value by index
-- ```empty()``` Check if the buffer average is equals the initial value
+- `calcAverage()` Calc the buffer average and return the result
+- `getAverage()` Just return the buffer average
+- `getAt(index)` Returns the buffer value by index
+- `empty()` Check if the buffer average is equals the initial value
 
 ### Setters
-- ```fill(value)``` Fill the buffer with the value
-- ```insert(value)``` Insert a new value to the buffer and calls ```calcAverage()```
-- ```clear()``` Fill the buffer with the initial value
+- `fill(value)` Fill the buffer with the value
+- `insert(value)` Insert a new value to the buffer and calls `calcAverage()`
+- `clear()` Fill the buffer with the initial value
 
 ## Example
-```
+```C++
 // Create a instance of Buffer
 Buffer sensorBuffer(10, 0);
 
